@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/consulta-cep/static/css/main.638a81a4.css",
+    "main.js": "/consulta-cep/static/js/main.39d41a7b.js",
+    "static/media/mapa-brasil.png": "/consulta-cep/static/media/mapa-brasil.a9939dcaed6fd91e8831.png",
+    "index.html": "/consulta-cep/index.html",
+    "main.638a81a4.css.map": "/consulta-cep/static/css/main.638a81a4.css.map",
+    "main.39d41a7b.js.map": "/consulta-cep/static/js/main.39d41a7b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.638a81a4.css",
+    "static/js/main.39d41a7b.js"
+  ]
+}
