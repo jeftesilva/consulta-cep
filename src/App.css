@@ -2,19 +2,12 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
+  background-color: #079bf2;
+  background-image: url('./images/mapa-brasil.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,15 +17,98 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-size: 3em;
 }
 
-@keyframes App-logo-spin {
-  from {
+form {
+  margin-bottom: 20px;
+}
+
+input {
+  max-width: 250px;
+  min-width: 150px;
+  height: 60px;
+  border: 2px solid #01579B;
+  border-radius: 25px;
+  font-size: 2rem;
+  padding: 0 20px;
+  vertical-align: middle;
+  outline-offset: 4px;
+  outline-width: 2px;
+  outline-color: #81D4FA;
+  color: #455A64;
+}
+
+button {
+  height: 50px;
+  background-color: #29B6F6;
+  border: 2px solid #01579B;
+  border-radius: 50px;
+  padding: 5px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  box-sizing: content-box;
+  vertical-align: middle;
+  outline-offset: 4px;
+  outline-width: 2px;
+  outline-color: #81D4FA;
+}
+
+button:disabled {
+  background-color: #455A64;
+  border: 2px solid #37474F;
+}
+
+input:focus, button:focus {
+  outline-style: dashed;
+}
+
+.icone-loading, .icone-busca {
+  color: white;
+  width: 22px;
+  height: 22px;
+}
+
+.icone-loading {
+  animation-name: Animacao-girar;
+  animation-duration: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes Animacao-girar {
+  0% {
     transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: rotate(60deg);
   }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+button:hover {
+  background-color: #0288D1;
+}
+
+.msg-cep {
+  color: #FFF;
+  background-color: rgba(179, 0, 0, 0.7);
+  border-radius: 50px;
+  padding: 10px 20px;
+  min-width: 330px;
+  font-weight: 300;
+  box-shadow: 0px 0px 10px rgba(183, 28, 28, 0.5);
+}
+
+.rotulo-dados {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #B3E5FC;
+}
+
+.texto-dados {
+  font-size: 1.8rem;
+  font-weight: 300;
 }
